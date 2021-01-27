@@ -11,7 +11,9 @@
         "brettt89/ss4-docker-compose": "dev-master",
         "symbiote/silverstripe-queuedjobs": "^4.6",
         "silverstripe/staticpublishqueue": "dev-master",
-        "phpstan/phpstan": "^0.12.69"
+        "phpstan/phpstan": "^0.12.69",
+        "silverstripe/crontask": "^2.1",
+        "silverstripe/dynamodb": "^4.0"
     },
     "require-dev": {
         "sminnee/phpunit": "^5.7",
