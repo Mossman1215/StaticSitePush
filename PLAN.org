@@ -1,0 +1,3 @@
+override vendor/silverstripe/staticpublishqueue/src/Publisher/FilesystemPublisher.php:160
+add hook to push to s3?
+or separate job to push public/cache to s3 as a job/task
