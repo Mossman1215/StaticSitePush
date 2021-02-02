@@ -20,7 +20,7 @@ class UpdateBucket extends BuildTask
             'version' => '2006-03-01',
         ]);
 
-        $source = sprintf('%s/%s',Environment::getEnv('ASSETS_PATH'),'cache');
+        $source = sprintf('%s/%s',str_replace(".protected", "",Environment::getEnv('SS_PROTECTED_ASSETS_PATH')),'cache');
         $bucket = Environment::getEnv('STATIC_BUCKET');
         $dest = sprintf("s3://%s/",$bucket);
 
