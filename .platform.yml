@@ -1,2 +1,15 @@
 php_settings:
   version: 7.4
+shared_dirs:
+  mysite:
+    cache: {}
+crons:
+  # Trigger regeneration expired cache entries every 10 minutes on a single machine
+  static_cache_regen:
+    time: "*/10 * * * *"
+    sake_once: "dev/tasks/StaticCacheRebuildTask"
+    vhost: "mysite"
+  job_process_immediate:
+    time: "*/2 * * * *"
+    sake_once: "dev/tasks/ProcessJobQueueTask"
+    vhost: "mysite"
