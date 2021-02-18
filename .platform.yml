@@ -7,7 +7,7 @@ crons:
   # Trigger regeneration expired cache entries every 10 minutes on a single machine
   static_cache_regen:
     time: "*/10 * * * *"
-    sake_once: "dev/tasks/StaticCacheRebuildTask"
+    sake_once: "dev/tasks/SilverStripe-StaticPublishQueue-Task-StaticCacheFullBuildTask"
     vhost: "mysite"
   job_process_immediate:
     time: "*/2 * * * *"
