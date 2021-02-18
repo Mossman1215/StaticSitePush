@@ -13,3 +13,9 @@ crons:
     time: "*/2 * * * *"
     sake_once: "dev/tasks/ProcessJobQueueTask"
     vhost: "mysite"
+whitelist:
+  mysite:
+    general:
+      - "203.86.201.21"
+    admin:
+      - "203.86.201.21"
