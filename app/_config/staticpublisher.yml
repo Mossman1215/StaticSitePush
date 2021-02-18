@@ -6,6 +6,5 @@ SilverStripe\Core\Injector\Injector:
   SilverStripe\StaticPublishQueue\Publisher:
     class: SilverStripe\StaticPublishQueue\Publisher\FilesystemPublisher
     properties:
-      fileExtension: html
-      destFolder: /var/www/mysite/shared/cache
+      destFolder: assets/cache
 

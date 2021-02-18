@@ -16,7 +16,7 @@ class UpdateBucket extends BuildTask
     public function run($request)
     {
         $logger = Injector::inst()->get(LoggerInterface::class);
-        #$promises = [];
+
         $client = new S3Client([
             'region'  => 'us-east-1',
             'version' => '2006-03-01',
