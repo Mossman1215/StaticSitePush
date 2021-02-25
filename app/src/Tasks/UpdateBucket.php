@@ -28,5 +28,13 @@ class UpdateBucket extends BuildTask
 
         $manager = new \Aws\S3\Transfer($client, $source, $dest);
         $manager->transfer();
+        $source = BASE_PATH.'/themes/';
+        $destination = $dest.'themes';
+        $manager = new \Aws\S3\Transfer($client,$source,$dest);
+        $manager->transfer();
+        $source = BASE_PATH.'/public/_resources/';
+        $destination = $dest.'_resources';
+        $manager = new \Aws\S3\Transfer($client,$source,$dest);
+        $manager->transfer();
     }
 }

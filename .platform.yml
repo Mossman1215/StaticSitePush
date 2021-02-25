@@ -13,3 +13,7 @@ crons:
     time: "*/2 * * * *"
     sake_once: "dev/tasks/ProcessJobQueueTask"
     vhost: "mysite"
+  update_bucket:
+    time: "*/30 * * * *"
+    sake_once: "dev/tasks/UpdateBucket"
+    vhost: "mysite"
